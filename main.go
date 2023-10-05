@@ -71,7 +71,7 @@ func waSender() {
 	data := url.Values{}
 	data.Set("token", os.Getenv("TOKEN"))
 	data.Set("to", os.Getenv("NUMBER"))
-	data.Set("body", fmt.Sprintf("```" + "Selamat Pagi Bennica San %v```", emoji.SmilingFaceWithHalo))
+	data.Set("body", fmt.Sprintf("```" + os.Getenv("MESSAGE") + " %v```", emoji.SmilingFaceWithHalo))
 
 	payload := strings.NewReader(data.Encode())
 

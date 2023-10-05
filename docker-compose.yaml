@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-    - TOKEN= GROUP_ID=
+    - TOKEN= 
+    - GROUP_ID=
     - NUMBER=
-     
+    - MESSAGE=
