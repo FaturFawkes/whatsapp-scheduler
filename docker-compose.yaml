@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  my-scheduler-app:
+    container_name: scheduler
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+    - TOKEN= GROUP_ID=
+    - NUMBER=
+     
